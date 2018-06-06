@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #FFF;
+}
+body.fullScreen .container {
+  width: 100%;
+}
+input {
+  padding: 0px;
+}
+input:focus {
+  outline: none;
+}
+#main {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+.container {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1px;
+  padding-bottom: 40px;
+}
+ul, li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+}
+.header .logo {
+  float: left;
+  text-align: center;
+  color: #EC7259;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.header .title {
+  color: #EC7259;
+  font-size: 24px;
+  font-weight: 500;
+}
+.header .login-nav {
+  float: right;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 9px 5px 0 15px;
+  color: #EC7259;
+  border: 1px solid rgba(236,97,73,.7);
+  border-radius: 15px;
+  cursor: pointer;
+}
