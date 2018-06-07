@@ -1,69 +1,176 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  background-color: #FFF;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #FFF;
 }
+
 body.fullScreen .container {
-  width: 100%;
+    width: 100%;
 }
+
 input {
-  padding: 0px;
+    padding: 0px;
 }
+
 input:focus {
-  outline: none;
+    outline: none;
 }
+
 #main {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
 }
+
 .container {
-  width: 960px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 1px;
-  padding-bottom: 40px;
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1px;
+    padding-bottom: 40px;
 }
-ul, li {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
+
 a {
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
+
+
+/* common - Header 组件样式 */
+
 .header {
-  text-align: center;
-  width: 100%;
-  height: 48px;
-  line-height: 48px;
-  box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.15);
 }
-.header .logo {
-  float: left;
-  text-align: center;
-  color: #EC7259;
-  font-size: 24px;
-  margin-left: 10px;
+
+.header .github_url {
+    float: left;
+    text-align: center;
+    color: #EC7259;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    margin: 6px 0 0 10px;
+    padding: 0px 6px;
+    border-radius: 36px;
 }
+
+.header .github_url:hover {
+    background-color: #EC7259;
+    color: #fff;
+}
+
 .header .title {
-  color: #EC7259;
-  font-size: 24px;
-  font-weight: 500;
+    color: #EC7259;
+    font-size: 24px;
+    font-weight: 500;
 }
+
 .header .login-nav {
-  float: right;
-  width: 60px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin: 9px 5px 0 15px;
-  color: #EC7259;
-  border: 1px solid rgba(236,97,73,.7);
-  border-radius: 15px;
-  cursor: pointer;
+    float: right;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 9px 5px 0 15px;
+    color: #EC7259;
+    border: 1px solid rgba(236, 97, 73, .7);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* common - List 组件样式 */
+
+.article-lists {
+    height: 100%;
+    padding-top: 30px;
+    margin-right: 220px;
+}
+
+.article-lists .cont-oprate {
+    padding: 15px 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.article-lists .cont-oprate input.search {
+    display: inline-block;
+    width: 400px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+}
+
+.article-lists .cont-oprate a.create-btn {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 3px;
+}
+
+.article-lists li {
+    position: relative;
+    height: 60px;
+    padding: 15px 10px 15px 25px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.article-lists li .type {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #ec7259;
+    border: 1px solid rgba(236, 97, 73, 0.7);
+    border-radius: 15px;
+}
+
+.article-lists li .art-title {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.article-lists li .art-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.article-lists li .art-delete-btn {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 2px 5px;
+    color: #ec7259;
+    cursor: pointer;
+    border: 1px solid rgba(236, 97, 73, 0.7);
+    border-radius: 15px;
 }

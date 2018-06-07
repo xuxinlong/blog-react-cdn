@@ -1,0 +1,36 @@
+.article-lists {
+	margin-right: 0px;
+	margin-left: 220px;
+}
+.left-bar {
+  width: 200px;
+  height: 100%;
+  float: left;
+  padding-top: 30px;
+}
+.left-bar .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.left-bar .logo a {
+  display: block;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  margin: auto;
+  font-size: 50px;
+  color: #ec7259;
+  border: 1px solid rgba(236, 114, 89, 0.8);
+  border-radius: 5px;
+}
+.left-bar li {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+.left-bar li.active,
+.left-bar li:hover {
+  background-color: rgba(236, 97, 73, 0.6);
+  color: #FFF;
+}

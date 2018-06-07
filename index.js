@@ -1,12 +1,11 @@
-var userInfo = {"id":1,"phone":"18170551225","name":"jack"};
-var Header = components.Header;
-var List = components.List;
+var Header = xl_components.Header;
+var List = xl_components.List;
 
 ReactDOM.render(
     <div>
-        <Header user={userInfo}></Header>
+        <Header></Header>
         <div className="container">
-            <List></List>
+            <List url={"/blog/article/list_public"} type={1}></List>
         </div>
     </div>
     ,
