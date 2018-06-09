@@ -99,14 +99,18 @@
             });
         },
         changeTitle: function (ev) {
-            this.title = ev.target.value
+            // this.title = ev.target.value
+            this.setState({
+                'title': ev.target.value
+            });
+            console.log(this.state.title);
         },
         render: function() {
             return (
                 <div className="article-edit">
                     <div className="edit-header">
                         <span className="save-btn" onClick={this.save}>{this.state.btn_text}</span>
-                        <input ref="title" value={this.state.title} onInput={this.changeTitle} type="text"/>
+                        <input ref="title" value={this.state.title} onInput={this.changeTitle} type="text" />
                     </div>
                     <Editor ref="mditor" value={this.state.text}></Editor>
                 </div>
