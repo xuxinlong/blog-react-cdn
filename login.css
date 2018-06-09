@@ -1,0 +1,73 @@
+.login-container {
+  height: 100%;
+}
+.login-container .logo {
+  text-align: center;
+  color: #EC7259;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.login-container .input-cont {
+  width: 300px;
+  padding: 50px;
+  margin: 50px auto 0 auto;
+  border-radius: 5px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color=#EC7259)";
+  /*IE 8*/
+
+  -moz-box-shadow: 0 0 2px 2px #EC7259;
+  /*FF 3.5+*/
+
+  -webkit-box-shadow: 0 0 2px 2px #EC7259;
+  /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+
+  box-shadow: 0 0 2px 2px #EC7259;
+  /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+  filter: progid:dximagetransform.microsoft.shadow(Strength=2, Direction=135, Color=#ec7259);
+  /*IE 5.5-7*/
+
+}
+.login-container .input-cont .input-prepend {
+  position: relative;
+  border: 1px solid #c8c8c8;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+.login-container .input-cont .input-prepend.name {
+  border-bottom-width: 0px;
+  border-radius: 5px 5px 0 0;
+}
+.login-container .input-cont .input-prepend.password {
+  border-radius: 0 0 5px 5px;
+}
+.login-container .input-cont .input-prepend i {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+.login-container .input-cont .input-prepend i:after {
+  content: "\E65E";
+}
+.login-container .input-cont .input-prepend input {
+  display: block;
+  box-sizing: border-box;
+  background: #f6f6f6;
+  border-width: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px 12px 5px 35px;
+}
+.login-container .input-cont .login-btn {
+  margin-top: 30px;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  background: #EC7259;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
