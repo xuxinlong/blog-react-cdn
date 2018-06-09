@@ -22,7 +22,7 @@
         delCookie: function (name) {
           const exp = new Date();
           exp.setTime(exp.getTime() - 1);
-          const cval = getCookie(name);
+          const cval = xl.getCookie(name);
           if (cval != null) { document.cookie = `${name}=${cval};expires=${exp.toGMTString()}`; }
         },
 
@@ -42,7 +42,8 @@
         if (!opt.headers) {
             opt.headers = {};
         }
-        var token = xl.getCookie('blog_token');
+        opt.headers['x-system'] = 'blog-react-cdn';
+        var token = xl.getCookie('blog_react_cdn_token');
         if (token) {
             opt.headers['x-access-token'] = token;
         }
@@ -81,7 +82,7 @@
                 <div className="header">
                     {this.state.user.github_url && <a target="_blank" href={this.state.user.github_url} className="github_url">Github</a>}
                     <span className="title">博客</span>
-                    { this.state.user ? <span className="login-nav">{this.state.user.name}</span> : <span className="login-nav">登录</span> }
+                    { this.state.user.name ? <a href="/blog-react-cdn/article/list.html" className="login-nav">{this.state.user.name}</a> : <a href="/blog-react-cdn/login.html" className="login-nav">登录</a> }
                 </div>
             );
         }

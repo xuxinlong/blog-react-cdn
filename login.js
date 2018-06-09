@@ -48,7 +48,7 @@
                 }).then((res) => {
                     if (res.code === 0) {
                         var data = res.data.data
-                        xl.setCookie('blog_token', data.token);
+                        xl.setCookie('blog_react_cdn_token', data.token);
                         location.href = 'article/list.html';
                     }
                 });

@@ -1,6 +1,6 @@
 #!/bin/sh
 # tar -zcvf blog-react-cdn.tar.gz --exclude=node_modules/blog-react-cdn.tar.gz ./*
-tar -zcvf blog-react-cdn.tar.gz --exclude=blog-react-cdn.tar.gz ./*
+tar -zcf blog-react-cdn.tar.gz --exclude=blog-react-cdn.tar.gz ./*
 scp blog-react-cdn.tar.gz root@47.104.157.93:/data/app/html/blog-react-cdn/blog-react-cdn.tar.gz
 
 rm -rf blog-react-cdn.tar.gz
