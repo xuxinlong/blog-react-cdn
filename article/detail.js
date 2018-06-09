@@ -18,7 +18,7 @@
                           <span>作者：{this.props.user_info ? this.props.user_info.name : ''}</span>
                           <div><span>日期：{this.props.detail ? this.props.detail.time : ''}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 字数:{(this.props.detail && this.props.detail.text) ? this.props.detail.text.length : ''}</span></div>
                         </div>
-                        {(this.props.detail && this.props.detail.isAuther) ? <div className="edit-btn">编辑</div> : ''}
+                        {(this.props.detail && this.props.detail.isAuther) ? <a href={'edit.html?id=' + this.props.detail.id} className="edit-btn">编辑</a> : ''}
                     </div>
                 </div>
             );
