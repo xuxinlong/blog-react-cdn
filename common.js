@@ -108,6 +108,23 @@
                 }
             });
         },
+        deleteArticle: function (id) {
+            var url = '/blog/article/delete';
+            var param = { 'blog_id' : id };
+            xl_fetch(url, {
+                'method': 'post',
+                'body': JSON.stringify(param),
+                'headers': {
+                    'content-type': 'application/json'
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+            }).then((data) => {
+                if (data.code === 0) {
+                    window.location.reload();
+                }
+            });
+        },
         componentDidMount: function () {
             this.getArticles(this.props.type);
         },
@@ -123,6 +140,7 @@
                                 <span className="type">{ item.type === 1 ? '文' : '记' }</span>
                                 <div className="art-title"><a target="_blank" href={item.id ? '/blog-react-cdn/article/detail.html?id=' + item.id : 'javascript: void(0);'}>{item.title}</a></div>
                                 <div className="art-text">{item.text}</div>
+                                { (this.props.delete && item.isAuther) ? <div className="art-delete-btn" onClick={this.deleteArticle.bind(this, item.id)}>删除</div> : '' }
                             </li>
                         ))}
                     </ul>

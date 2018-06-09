@@ -1,0 +1,54 @@
+.article-edit {
+  height: 100%;
+}
+.article-edit {
+  position: relative;
+  height: 100%;
+}
+.article-edit .edit-header {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  z-index: 9999;
+  top: -64px;
+  left: 0;
+  padding-top: 20px;
+}
+.article-edit .edit-header .save-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #ea6f5a;
+}
+.article-edit .edit-header input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 0px;
+  padding: 0 200px 10px 80px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  height: 34px;
+  line-height: 34px;
+  color: #595959;
+  background-color: transparent;
+  outline: none;
+  border-radius: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.article-edit .mditor {
+  position: relative;
+  margin-top: 65px;
+}
+.article-edit .save-btn {
+  cursor: pointer;
+}

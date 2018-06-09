@@ -158,6 +158,10 @@ a {
     margin-bottom: 10px;
 }
 
+.article-lists li .art-title a {
+    color: #0366d6;
+}
+
 .article-lists li .art-text {
     overflow: hidden;
     white-space: nowrap;
